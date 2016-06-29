@@ -1,9 +1,79 @@
-.splash {
-  height:50vh;
-  width:100%;
-  background:#EEE;
+@-webkit-keyframes LogoAnimation {
+    0%{fill:#fa4db2}
+    50%{fill:#fa904d}
+    100%{fill:#fa4db2}
+}
+@-moz-keyframes LogoAnimation {
+  0%{fill:#fa4db2}
+  50%{fill:#fa904d}
+  100%{fill:#fa4db2}
+}
+@keyframes LogoAnimation {
+  0%{fill:#fa4db2}
+  50%{fill:#fa904d}
+  100%{fill:#fa4db2}
 }
 
 .container {
+  padding:0;
+}
+
+.logo{
+  display:block;
+  margin:6rem auto;
+  fill:#FFF;
+  height:200px;
+  width:100%;
+  fill: #fa4db2;
+  -webkit-animation: LogoAnimation 5s ease infinite;
+  -moz-animation: LogoAnimation 5s ease infinite;
+  animation: LogoAnimation 5s ease infinite;
+}
+
+.splash {
+  height:100vh;
+  width:100%;
+  position: relative;
+}
+
+.splash * {
+  color:#666;
+}
+
+.splash h1 {
+}
+
+
+.text {
   padding:4rem;
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
+.btn-default {
+  background: transparent;
+  border:1px solid #CCC;
+  color:#666;
+  margin:2rem 0;
+}
+
+.btn-default:hover {
+  background:#EEE;
+  color:#666;
+  border:1px solid #CCC;
+}
+
+#Ignition {
+  background:url('/img/rocket.png') no-repeat center bottom;
+  background-size: contain;
+}
+
+#Flight-Plan {
+  background:url('http://landsat.gsfc.nasa.gov/wp-content/uploads/2013/01/sun-syn_orbit.jpg') no-repeat center top;
+  background-size: contain;
+}
+
+#Launch {
+  background:url('http://bigroomstudios.com/assets/images/services/header-bg-infinity-layer-3-b2a1231b.png') no-repeat 150px -50px;
 }
