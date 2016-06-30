@@ -7,8 +7,13 @@
 
   <title>Infinity | Big Room Studios</title>
 
+  <script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
   <script src="https://use.fontawesome.com/e2be26c69c.js"></script>
@@ -32,7 +37,7 @@
       <div class="text">
         <h1>Infinity</h1>
         <p>Establish a succesful, actionable plan for developing new technology projects</p>
-        <p><a href="#Ignition" class="btn btn-default btn-lg">Let's Get Started</a></p>
+        <p><a onclick="$('#Welcome-To-Infinity').addClass('hidden'); $('#Ignition .text').addClass('animated bounceInUp')" class="btn btn-default btn-lg">Let's Get Started</a></p>
       </div>
 
     </div>
@@ -49,10 +54,14 @@
 
         <p>We will kick-off the process with a 3 hour planning and strategy session,
           where we get all your ideas, features  and user stories out on the table, while discussing your overall business
-          and development goals. We then write the Ignition Document, organizing and outlining this content for your review.
+          and development goals. We then write the <span>Ignition Document</span>, organizing and outlining this content for your review.
         </p>
 
-        <p><a href="#Flight-Plan" class="btn btn-default btn-lg">Flight Plan</a></p>
+        <p>
+          <a onclick="$('#Welcome-To-Infinity').removeClass('hidden')" class="btn btn-default">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a onclick="$('#Ignition').addClass('hidden'); " class="btn btn-default">Build a Flight Plan</a>
 
       </div>
 
@@ -68,8 +77,8 @@
 
         <h2>Flight Plan</h2>
 
-        <p>During this phase, the plan created in the Ignition Document is transformed into an Information Architecture
-          document and Wireframes of key screens, allowing you to visualize user flows for your new technology project.
+        <p>During this phase, the plan created in the Ignition Document is transformed into an <span>Information Architecture</span>
+          document and <span>Wireframes</span> of key screens, allowing you to visualize user flows for your new technology project.
         </p>
 
         <p><a href="#Launch" class="btn btn-default btn-lg">Launch</a></p>
@@ -90,7 +99,7 @@
 
         <p>In this last phase, we combine your Information Architecture, Designs, User Flows and Feature Descriptions with
           a Technical Development Plan, involving a detailed Sprint Schedule with actionable Development Tasks. This final
-          Launch Document will also include a proposed project budget and timeline.
+          <span>Launch Document</span> will also include a proposed <span>project budget and timeline</span>.
         </p>
 
         <p><a href="#Contact" class="btn btn-default btn-lg">Launch</a></p>
