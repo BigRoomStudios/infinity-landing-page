@@ -30,26 +30,49 @@
   animation: LogoAnimation 5s ease infinite;
 }
 
-.splash {
+@media only screen  and (min-width : 768px) {
+  .logo {
+    margin-top:25vh;
+  }
+}
+
+
+
+.hero {
   height:100vh;
   width:100%;
   position: relative;
 }
 
-.splash * {
+.hero * {
   color:#666;
 }
 
-.splash h1 {
+.hero h1 {
 }
 
-
-.text {
+.hero .text {
   padding:4rem;
   position: absolute;
   bottom:0;
   left:0;
 }
+
+@media only screen  and (min-width : 768px) {
+
+  .hero .text {
+    padding-top:33vh;
+    position: relative;
+    max-width:500px;
+    margin:0rem auto;
+  }
+
+  #Welcome-To-Infinity .text {
+    padding-top:2rem;
+  }
+
+}
+
 
 .btn-default {
   background: transparent;
@@ -64,6 +87,7 @@
   border:1px solid #CCC;
 }
 
+/* Blocks Specific */
 #Ignition {
   background:url('/img/rocket.png') no-repeat center bottom;
   background-size: contain;
