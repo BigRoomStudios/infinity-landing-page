@@ -23,26 +23,39 @@
 
 <body>
 
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-    <symbol id="icon-infinity" viewBox="0 0 512 512">
-      <path d="m738 256c0 141-115 256-256 256-147 0-256-111-256-256 0-113-83-196-196-196-109 0-196 87-196 196 0 109 87 196 196 196 62 0 117-27 156-77l34 52c-49 53-118 85-190 85-141 0-256-115-256-256 0-141 115-256 256-256 147 0 256 111 256 256 0 113 83 196 196 196 109 0 196-87 196-196 0-109-87-196-196-196-60 0-115 27-153 74l-37-51c49-53 118-83 190-83 141 0 256 115 256 256z"></path>
-    </symbol>
-  </svg>
+  <div id="Ignition" class="hero">
 
-  <div id="Welcome-To-Infinity" class="hero">
+    <div class="rocket">
+      <img src="/img/rocket_3.png" />
+      <div class="chemtrail"></div>
+    </div>
 
-    <div class="container text-center">
-      <svg class="logo" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-infinity"></use></svg>
+    <img src="/img/smoke_clouds_alt.png" class="clouds clouds-alt" />
+    <img src="/img/smoke_clouds.png" class="clouds" />
 
-      <div class="text">
-        <h1>Infinity</h1>
-        <p>Establish a succesful, actionable plan for developing new technology projects</p>
-        <p><a href="ignition.html" class="btn btn-default btn-lg">Let's Get Started</a></p>
+    <div class="container">
+
+      <div class="text animated bounceInUp">
+
+        <h2>Ignition</h2>
+
+        <p>We will kick-off the process with a 3 hour planning and strategy session,
+          where we get all your ideas, features  and user stories out on the table, while discussing your overall business
+          and development goals. We then write the <span>Ignition Document</span>, organizing and outlining this content for your review.
+        </p>
+
+        <p>
+          <a href="index.html" class="btn btn-default">
+            <i class="fa fa-arrow-left"></i>
+          </a>
+          <a onclick="$('.rocket').addClass('rocketUp'); $('.text').addClass('animated bounceInUp')" class="btn btn-default">Build a Flight Plan</a>
+
       </div>
 
     </div>
 
   </div>
+
 
 </body>
 </html>
