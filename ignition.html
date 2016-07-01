@@ -17,6 +17,8 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
   <script src="https://use.fontawesome.com/e2be26c69c.js"></script>
+  <script src="/js/app.js"></script>
+
   <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 
 </head>
@@ -25,13 +27,14 @@
 
   <div id="Ignition" class="hero">
 
-    <div class="rocket">
+    <div class="rocket animated bounceInLeft">
       <img src="/img/rocket_3.png" />
       <div class="chemtrail"></div>
     </div>
 
-    <img src="/img/smoke_clouds_alt.png" class="clouds clouds-alt" />
-    <img src="/img/smoke_clouds.png" class="clouds" />
+      <div class="clouds"></div>
+      <div class="clouds clouds-alt"></div>
+
 
     <div class="container">
 
@@ -39,22 +42,37 @@
 
         <h2>Ignition</h2>
 
-        <p>We will kick-off the process with a 3 hour planning and strategy session,
-          where we get all your ideas, features  and user stories out on the table, while discussing your overall business
-          and development goals. We then write the <span>Ignition Document</span>, organizing and outlining this content for your review.
+        <p>We kick-off the process with a 3 hour planning and strategy session, where we get all your ideas,
+          features  and user stories out on the table, while discussing your overall business
+          and development goals. We then write the <span>Ignition Document</span>, organizing and outlining this
+          content for your review.
         </p>
 
         <p>
-          <a href="index.html" class="btn btn-default">
-            <i class="fa fa-arrow-left"></i>
-          </a>
-          <a onclick="$('.rocket').addClass('rocketUp'); $('.text').addClass('animated bounceInUp')" class="btn btn-default">Build a Flight Plan</a>
+          <a onclick="" class="btn btn-default">Build a Flight Plan</a>
 
       </div>
 
     </div>
 
   </div>
+
+  <script type="text/javascript">
+
+    function playExitAnimation() {
+      $('.rocket img').addClass('animated zoomOutUp');
+      $('.rocket').addClass('rocketUp');
+      $('.clouds').addClass('animated fadeOutDownBig');
+      $('.text').addClass('animated zoomOut');
+      setTimeout(function() {
+        window.location = 'flight-plan.html';
+      },700);
+    }
+
+    $(function(){
+      $('.btn').click(playExitAnimation);
+    })
+  </script>
 
 
 </body>

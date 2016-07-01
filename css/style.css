@@ -83,34 +83,29 @@
 @media only screen  and (min-width : 768px) {
 
   .hero .text {
-    padding-top:3rem;
+    padding-top:6rem;
     position: relative;
-    max-width:500px;
+    max-width:750px;
     margin:0rem auto;
   }
 
   #Welcome-To-Infinity .text {
-    padding-top:0rem;
+    padding-top:0;
+  }
+
+  #Ignition .text {
+    padding-left:20rem;
   }
 
 }
 
-/* Blocks Specific */
-#Welcome-To-Infinity  {
-}
-
-#Ignition .text {
-  padding-left:10rem;
-}
-
-#Ignition .rocket {
+.rocket {
   position:absolute;
-  bottom:3rem;
-  left:33vw;
+  bottom:0;
   z-index: 3;
 }
 
-#Ignition .rocket img {
+.rocket img {
   height:400px;
   display:block;
   margin:auto;
@@ -120,51 +115,129 @@
   margin:auto;
   background:#EEE;
   width:25px;
-  height:5px;
+  height:75px;
 }
 
-#Ignition .clouds {
+.clouds {
   position:absolute;
   bottom:0;
   left:0;
   right:0;
+  height: 350px;
   width:100%;
   z-index: 2;
+  background: url('/img/smoke_clouds.png') no-repeat 250px bottom;
+  background-size:contain;
+  -webkit-animation: CloudLeftIdle 30s linear infinite;
+  -moz-animation: CloudLeftIdle 30s linear infinite;
+  animation: CloudLeftIdle 30s linear infinite;
 }
 
-#Ignition .clouds-alt {
+.clouds-alt {
   z-index:4;
-  right:0;
-
-  left:-10vw;
+  background: url('/img/smoke_clouds_alt.png') no-repeat -250px bottom;
+  background-size:contain;
+  -webkit-animation: CloudRightIdle 30s linear infinite;
+  -moz-animation: CloudRightIdle 30s linear infinite;
+  animation: CloudRightIdle 30s linear infinite;
 }
 
-#Flight-Plan {
-  background:#FFF url('http://landsat.gsfc.nasa.gov/wp-content/uploads/2013/01/sun-syn_orbit.jpg') no-repeat center top;
-  background-size: contain;
+/* Rocket Up Animation */
+@-webkit-keyframes RocketUp {
+    0%{  height:75px; }
+    100%{ height:200vh; }
+}
+@-moz-keyframes RocketUp {
+  0%{  height:75px; }
+  100%{ height:200vh; }
+}
+@keyframes RocketUp {
+  0%{  height:75px; }
+  100%{ height:200vh; }
+}
+
+/* Rocket Up Animation */
+@-webkit-keyframes RocketFlightPlan {
+    0%{  height:5px; }
+    100%{ height:500px; }
+}
+@-moz-keyframes RocketFlightPlan {
+  0%{  height:5px; }
+  100%{ height:500px; }
+}
+@keyframes RocketFlightPlan {
+  0%{  height:5px; }
+  100%{ height:500px; }
+}
+
+/* Rocket Up Animation */
+@-webkit-keyframes CloudLeftIdle {
+    0%{  background-position: 250px bottom; }
+    50%{  background-position: 150px bottom; }
+    100%{  background-position: 250px bottom; }
+}
+@-moz-keyframes CloudLeftIdle {
+    0%{  background-position: 250px bottom; }
+    50%{  background-position: 150px bottom; }
+    100%{  background-position: 250px bottom; }
+}
+@keyframes CloudLeftIdle {
+  0%{  background-position: 250px bottom; }
+  50%{  background-position: 150px bottom; }
+  100%{  background-position: 250px bottom; }
+}
+
+/* Rocket Up Animation */
+@-webkit-keyframes CloudRightIdle {
+    0%{  background-position: -250px bottom; }
+    50%{  background-position: -150px bottom; }
+    100%{  background-position: -250px bottom; }
+}
+@-moz-keyframes CloudRightIdle {
+    0%{  background-position: -250px bottom; }
+    50%{  background-position: -150px bottom; }
+    100%{  background-position: -250px bottom; }
+}
+@keyframes CloudRightIdle {
+  0%{  background-position: -250px bottom; }
+  50%{  background-position: -150px bottom; }
+  100%{  background-position: -250px bottom; }
+}
+
+.rocketUp .chemtrail  {
+  -webkit-animation: RocketUp ease 2s;
+  -moz-animation: RocketUp ease 2s;
+  animation: RocketUp ease 2s;
+}
+
+/* Blocks Specific */
+#Welcome-To-Infinity  {
+}
+
+#Ignition .text {
+}
+
+#Ignition .rocket {
+  left:33vw;
+}
+
+#Flight-Plan .rocket {
+  right:33vw;
+  bottom:-150px;
+  transform:rotate(45deg);
+}
+
+#Flight-Plan .rocket .chemtrail {
+  height:500px;
+  -webkit-animation: RocketFlightPlan  1s;
+  -moz-animation: RocketFlightPlan  1s;
+  animation: RocketFlightPlan  1s;
+}
+
+#Flight-Plan .text {
+  padding-right:20rem;
 }
 
 #Launch {
   background:#FFF url('http://bigroomstudios.com/assets/images/services/header-bg-infinity-layer-3-b2a1231b.png') no-repeat 150px -50px;
-}
-
-
-/* Logo Animation */
-@-webkit-keyframes RocketUp {
-    0%{  height:5px; }
-    100%{ height:200vh; }
-}
-@-moz-keyframes RocketUp {
-  0%{  height:5px; }
-  100%{ height:200vh; }
-}
-@keyframes RocketUp {
-  0%{  height:5px; }
-  100%{ height:200vh; }
-}
-
-.rocketUp .chemtrail  {
-  -webkit-animation: RocketUp 3s;
-  -moz-animation: RocketUp 3s;
-  animation: RocketUp 3s;
 }
