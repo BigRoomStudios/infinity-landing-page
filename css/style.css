@@ -128,15 +128,21 @@
   z-index: 2;
   background: url('/img/smoke_clouds.png') no-repeat 250px bottom;
   background-size:contain;
-  -webkit-animation: CloudLeftIdle 30s linear infinite;
-  -moz-animation: CloudLeftIdle 30s linear infinite;
-  animation: CloudLeftIdle 30s linear infinite;
 }
 
 .clouds-alt {
   z-index:4;
   background: url('/img/smoke_clouds_alt.png') no-repeat -250px bottom;
   background-size:contain;
+}
+
+#Ignition .clouds {
+  -webkit-animation: CloudLeftIdle 30s linear infinite;
+  -moz-animation: CloudLeftIdle 30s linear infinite;
+  animation: CloudLeftIdle 30s linear infinite;
+}
+
+#Ignition .clouds-alt {
   -webkit-animation: CloudRightIdle 30s linear infinite;
   -moz-animation: CloudRightIdle 30s linear infinite;
   animation: CloudRightIdle 30s linear infinite;
@@ -219,6 +225,18 @@
 
 #Ignition .rocket {
   left:33vw;
+}
+
+#Flight-Plan {
+  background: #bae8fd;
+}
+
+#Flight-Plan .text * {
+  color:#000;
+}
+
+#Flight-Plan .chemtrail {
+  background: #FFF;
 }
 
 #Flight-Plan .rocket {

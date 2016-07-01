@@ -27,6 +27,8 @@
 
   <div id="Flight-Plan" class="hero">
 
+    <div class="clouds animated fadesInUp"></div>
+
     <div class="rocket">
       <img src="/img/rocket_3.png" />
       <div class="chemtrail"></div>
@@ -55,7 +57,7 @@
   <script type="text/javascript">
 
     function playExitAnimation() {
-      $('.hero').addClass('animated fadeOutUp');
+      $('.text').addClass('animated zoomIn');
       setTimeout(function() {
         window.location = 'launch.html';
       },700);
