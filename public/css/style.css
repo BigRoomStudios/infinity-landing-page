@@ -93,10 +93,6 @@
     padding-top:0;
   }
 
-  #Ignition .text {
-    padding-left:20rem;
-  }
-
 }
 
 .rocket {
@@ -136,125 +132,12 @@
   background-size:contain;
 }
 
-#Ignition .clouds {
-  -webkit-animation: CloudLeftIdle 30s linear infinite;
-  -moz-animation: CloudLeftIdle 30s linear infinite;
-  animation: CloudLeftIdle 30s linear infinite;
-}
-
-#Ignition .clouds-alt {
-  -webkit-animation: CloudRightIdle 30s linear infinite;
-  -moz-animation: CloudRightIdle 30s linear infinite;
-  animation: CloudRightIdle 30s linear infinite;
-}
-
-/* Rocket Up Animation */
-@-webkit-keyframes RocketUp {
-    0%{  height:75px; }
-    100%{ height:200vh; }
-}
-@-moz-keyframes RocketUp {
-  0%{  height:75px; }
-  100%{ height:200vh; }
-}
-@keyframes RocketUp {
-  0%{  height:75px; }
-  100%{ height:200vh; }
-}
-
-/* Rocket Up Animation */
-@-webkit-keyframes RocketFlightPlan {
-    0%{  height:5px; }
-    100%{ height:500px; }
-}
-@-moz-keyframes RocketFlightPlan {
-  0%{  height:5px; }
-  100%{ height:500px; }
-}
-@keyframes RocketFlightPlan {
-  0%{  height:5px; }
-  100%{ height:500px; }
-}
-
-/* Rocket Up Animation */
-@-webkit-keyframes CloudLeftIdle {
-    0%{  background-position: 250px bottom; }
-    50%{  background-position: 150px bottom; }
-    100%{  background-position: 250px bottom; }
-}
-@-moz-keyframes CloudLeftIdle {
-    0%{  background-position: 250px bottom; }
-    50%{  background-position: 150px bottom; }
-    100%{  background-position: 250px bottom; }
-}
-@keyframes CloudLeftIdle {
-  0%{  background-position: 250px bottom; }
-  50%{  background-position: 150px bottom; }
-  100%{  background-position: 250px bottom; }
-}
-
-/* Rocket Up Animation */
-@-webkit-keyframes CloudRightIdle {
-    0%{  background-position: -250px bottom; }
-    50%{  background-position: -150px bottom; }
-    100%{  background-position: -250px bottom; }
-}
-@-moz-keyframes CloudRightIdle {
-    0%{  background-position: -250px bottom; }
-    50%{  background-position: -150px bottom; }
-    100%{  background-position: -250px bottom; }
-}
-@keyframes CloudRightIdle {
-  0%{  background-position: -250px bottom; }
-  50%{  background-position: -150px bottom; }
-  100%{  background-position: -250px bottom; }
-}
-
 .rocketUp .chemtrail  {
   -webkit-animation: RocketUp ease 2s;
   -moz-animation: RocketUp ease 2s;
   animation: RocketUp ease 2s;
 }
 
-/* Blocks Specific */
-#Welcome-To-Infinity  {
-}
-
-#Ignition .text {
-}
-
-#Ignition .rocket {
-  left:33vw;
-}
-
-#Flight-Plan {
-  background: #bae8fd;
-}
-
-#Flight-Plan .text * {
-  color:#000;
-}
-
-#Flight-Plan .chemtrail {
-  background: #FFF;
-}
-
-#Flight-Plan .rocket {
-  right:33vw;
-  bottom:-150px;
-  transform:rotate(45deg);
-}
-
-#Flight-Plan .rocket .chemtrail {
-  height:500px;
-  -webkit-animation: RocketFlightPlan  1s;
-  -moz-animation: RocketFlightPlan  1s;
-  animation: RocketFlightPlan  1s;
-}
-
-#Flight-Plan .text {
-  padding-right:20rem;
-}
 
 #Launch {
   background:#FFF url('http://bigroomstudios.com/assets/images/services/header-bg-infinity-layer-3-b2a1231b.png') no-repeat 150px -50px;

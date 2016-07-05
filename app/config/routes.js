@@ -18,35 +18,45 @@ module.exports = function(server) {
       method: 'GET',
       path:'/',
       handler: function (request, reply) {
-        return reply.view('index');
+        return reply.view('index', {
+          viewStyle: ''
+        });
       }
     },
     {
       method: 'GET',
       path:'/ignition',
       handler: function (request, reply) {
-        return reply.view('ignition');
+        return reply.view('ignition', {
+          viewStyle: 'ignition'
+        });
       }
     },
     {
       method: 'GET',
       path:'/flight-plan',
       handler: function (request, reply) {
-        return reply.view('flight-plan');
+        return reply.view('flight-plan', {
+          viewStyle: 'flight-plan'
+        });
       }
     },
     {
       method: 'GET',
       path:'/launch',
       handler: function (request, reply) {
-        return reply.view('launch');
+        return reply.view('launch', {
+          viewStyle: 'launch'
+        });
       }
     },
     {
       method: 'GET',
       path:'/contact',
       handler: function (request, reply) {
-        return reply.view('contact');
+        return reply.view('contact', {
+          viewStyle: 'contact'
+        });
       }
     }
   ];

@@ -1,0 +1,26 @@
+#Ignition .text {
+}
+
+#Ignition .rocket {
+  left:33vw;
+}
+
+#Ignition .clouds {
+  -webkit-animation: CloudLeftIdle 30s linear infinite;
+  -moz-animation: CloudLeftIdle 30s linear infinite;
+  animation: CloudLeftIdle 30s linear infinite;
+}
+
+#Ignition .clouds-alt {
+  -webkit-animation: CloudRightIdle 30s linear infinite;
+  -moz-animation: CloudRightIdle 30s linear infinite;
+  animation: CloudRightIdle 30s linear infinite;
+}
+
+@media only screen  and (min-width : 768px) {
+
+  #Ignition .text {
+    padding-left:20rem;
+  }
+
+}

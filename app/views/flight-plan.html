@@ -14,9 +14,11 @@
 
   <div class="container">
 
+
+
     <div class="text animated bounceInUp">
 
-      <h2>Flight Plan</h2>
+    <h2>Flight Plan</h2>
 
       <p>During this phase, the plan created in the Ignition Document is transformed into an <span>Information Architecture</span>
         document and <span>Wireframes</span> of key screens, allowing you to visualize user flows for your new technology project.
@@ -24,6 +26,7 @@
 
       <p>
         <a onclick="" class="btn btn-default">Launch Your Vision</a>
+      </p>
 
     </div>
 
@@ -34,7 +37,7 @@
 <script type="text/javascript">
 
   function playExitAnimation() {
-    $('.rocket').addClass('rocketUp');
+    $('.text, .clouds, .rocket').addClass('animated zoomOut');
     setTimeout(function() {
       window.location = '/launch';
     },700);

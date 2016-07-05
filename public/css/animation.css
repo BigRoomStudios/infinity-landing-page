@@ -1,0 +1,62 @@
+
+/* Rocket Up Animation */
+@-webkit-keyframes RocketUp {
+    0%{  height:75px; }
+    100%{ height:200vh; }
+}
+@-moz-keyframes RocketUp {
+  0%{  height:75px; }
+  100%{ height:200vh; }
+}
+@keyframes RocketUp {
+  0%{  height:75px; }
+  100%{ height:200vh; }
+}
+
+/* Cloud Left Idle  */
+@-webkit-keyframes CloudLeftIdle {
+    0%{  background-position: 250px bottom; }
+    50%{  background-position: 150px bottom; }
+    100%{  background-position: 250px bottom; }
+}
+@-moz-keyframes CloudLeftIdle {
+    0%{  background-position: 250px bottom; }
+    50%{  background-position: 150px bottom; }
+    100%{  background-position: 250px bottom; }
+}
+@keyframes CloudLeftIdle {
+  0%{  background-position: 250px bottom; }
+  50%{  background-position: 150px bottom; }
+  100%{  background-position: 250px bottom; }
+}
+
+/* Cloud Right Idle */
+@-webkit-keyframes CloudRightIdle {
+    0%{  background-position: -250px bottom; }
+    50%{  background-position: -150px bottom; }
+    100%{  background-position: -250px bottom; }
+}
+@-moz-keyframes CloudRightIdle {
+    0%{  background-position: -250px bottom; }
+    50%{  background-position: -150px bottom; }
+    100%{  background-position: -250px bottom; }
+}
+@keyframes CloudRightIdle {
+  0%{  background-position: -250px bottom; }
+  50%{  background-position: -150px bottom; }
+  100%{  background-position: -250px bottom; }
+}
+
+/* Rocket Up for Flight Plan Animation */
+@-webkit-keyframes RocketFlightPlan {
+    0%{  height:5px; }
+    100%{ height:400px; }
+}
+@-moz-keyframes RocketFlightPlan {
+  0%{  height:5px; }
+  100%{ height:400px; }
+}
+@keyframes RocketFlightPlan {
+  0%{  height:5px; }
+  100%{ height:400px; }
+}
