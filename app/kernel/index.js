@@ -6,12 +6,15 @@ const Path = require('path');
 // Create a server with a host and port
 const server = new Hapi.Server();
 
+const rootPath = Path.normalize(__dirname + '/../..');
+const publicPath = `${rootPath}/public`;
+
 server.connection({
     host: 'localhost',
     port: 8000,
     routes: {
         files: {
-            relativeTo: Path.join(__dirname, '../../public')
+            relativeTo: publicPath
         }
     }
 });

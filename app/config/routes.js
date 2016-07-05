@@ -8,9 +8,11 @@ module.exports = function(server) {
       path: '/{param*}',
       handler: {
           directory: {
-              path: '/public'
+              path: '.',
+              redirectToSlash: true,
+              index: true
           }
-        }
+      }
     },
     {
       method: 'GET',
