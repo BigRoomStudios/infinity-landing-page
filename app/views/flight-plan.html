@@ -1,0 +1,49 @@
+{% extends "global.html" %}
+
+{% block content %}
+
+<div id="Flight-Plan" class="hero">
+
+  <div class="clouds animated fadesInUp"></div>
+
+  <div class="rocket">
+    <img src="/img/rocket_3.png" />
+    <div class="chemtrail"></div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="text animated bounceInUp">
+
+      <h2>Flight Plan</h2>
+
+      <p>During this phase, the plan created in the Ignition Document is transformed into an <span>Information Architecture</span>
+        document and <span>Wireframes</span> of key screens, allowing you to visualize user flows for your new technology project.
+      </p>
+
+      <p>
+        <a onclick="" class="btn btn-default">Launch Your Vision</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+  function playExitAnimation() {
+    $('.rocket').addClass('rocketUp');
+    setTimeout(function() {
+      window.location = 'launch.html';
+    },700);
+  }
+
+  $(function(){
+    $('.btn').click(playExitAnimation);
+  })
+</script>
+
+
+{% endblock %}

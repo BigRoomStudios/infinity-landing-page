@@ -1,0 +1,25 @@
+{
+  "name": "infinity-landing-page",
+  "version": "1.0.0",
+  "description": "Infinity Landing Page ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigRoomStudios/infinity-landing-page.git"
+  },
+  "author": "maxatbrs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BigRoomStudios/infinity-landing-page/issues"
+  },
+  "homepage": "https://github.com/BigRoomStudios/infinity-landing-page#readme",
+  "dependencies": {
+    "hapi": "^13.4.2",
+    "inert": "^4.0.0",
+    "swig": "^1.4.2",
+    "vision": "^4.1.0"
+  }
+}
