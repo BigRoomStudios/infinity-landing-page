@@ -14,8 +14,6 @@
 
   <div class="container">
 
-
-
     <div class="text animated bounceInUp">
 
     <h2>Flight Plan</h2>
@@ -37,7 +35,8 @@
 <script type="text/javascript">
 
   function playExitAnimation() {
-    $('.text, .clouds, .rocket').addClass('animated zoomOut');
+    $('.text, .clouds').addClass('animated zoomOut');
+    $('.rocket').addClass('.shoot');
     setTimeout(function() {
       window.location = '/launch';
     },700);

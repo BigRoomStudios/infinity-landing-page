@@ -98,7 +98,7 @@
 .rocket {
   position:absolute;
   bottom:0;
-  z-index: 3;
+  z-index: 4;
 }
 
 .rocket img {
@@ -121,13 +121,13 @@
   right:0;
   height: 350px;
   width:100%;
-  z-index: 2;
+  z-index: 3;
   background: url('/img/smoke_clouds.png') no-repeat 250px bottom;
   background-size:contain;
 }
 
 .clouds-alt {
-  z-index:4;
+  z-index:6;
   background: url('/img/smoke_clouds_alt.png') no-repeat -250px bottom;
   background-size:contain;
 }
@@ -137,6 +137,34 @@
   -moz-animation: RocketUp ease 2s;
   animation: RocketUp ease 2s;
 }
+
+.horizon {
+  position: fixed;
+  top: 45vh;
+  left: -33vw;
+  right: -33vw;
+  bottom: -33vh;
+  background: #FFF;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.planet {
+  position: absolute;
+  height:300px;
+  width:300px;
+  right: 10vw;
+  top: 25vh;
+  z-index: 2;
+  background: url('/img/planet.png') no-repeat center;
+  background-size:contain;
+}
+
+.shoot {
+  transform: rotateX( 45deg );
+}
+
+
 
 
 #Launch {
