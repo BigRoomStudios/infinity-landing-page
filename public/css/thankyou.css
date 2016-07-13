@@ -1,0 +1,43 @@
+#Thankyou {
+  background:black;
+}
+
+#Thankyou .text *{
+  color:white;
+  line-height:1;
+}
+
+#Thankyou .rocket {
+  background-image: url('/img/rocket.png');
+  background-size:cover;
+  width:200px;
+  height: 300px;
+}
+
+#Thankyou .planet {
+  z-index: 2;
+  position: relative;
+  background-image: url('/img/blue-planet.png');
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  -webkit-animation: spin 20s linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: spin 20s linear infinite; /* Firefox 5-15 */
+       -o-animation: spin 20s linear infinite; /* Opera 12+ */
+          animation: spin 20s linear infinite; /* Chrome, Firefox 16+,
+                                                    IE 10+, Safari 5 */
+}
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

@@ -1,0 +1,195 @@
+#Flightplan{
+  z-index:5;
+  position: absolute;
+  background:none, transparent;
+  height:100%;
+  overflow:hidden;
+}
+
+#Flighplan .btn{
+  z-index:4;
+}
+
+#Flightplan h2, #Flightplan p, #Flightplan ul li{
+  color:white;
+  z-index: 5;
+}
+
+#Flightplan .rocket {
+  left:50vw;
+}
+
+#Rocket.rocket img {
+  height:100px;
+}
+
+.rocketWobble {
+  -webkit-animation: rocketWobble 30s infinite;
+}
+
+#Planet img{
+  height:200px;
+  width:200px;
+  -webkit-animation: spin 20s linear infinite; /* Chrome, Safari 5 */
+     -moz-animation: spin 20s linear infinite; /* Firefox 5-15 */
+       -o-animation: spin 20s linear infinite; /* Opera 12+ */
+          animation: spin 20s linear infinite; /* Chrome, Firefox 16+,
+                                                    IE 10+, Safari 5 */
+}
+
+#Planet {
+    position: absolute;
+    background: transparent;
+    right: 15vw;
+    bottom: 20vh;
+    -webkit-animation: myOrbit 40s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 40s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 40s linear infinite; /* Opera 12+ */
+            animation: myOrbit 40s linear infinite; /* Chrome, Firefox 16+,
+                                                      IE 10+, Safari 5 */
+}
+
+.planet-container{
+  z-index: 2;
+  width:100%;
+  height:100%;
+  position: absolute;
+}
+
+.blastoff{
+  position:relative;
+  margin-top:50vh;
+  text-align: center;
+}
+
+.blastoff *{
+  color:white;
+}
+
+#Flightplan #Contact {
+  margin-top:2em;
+}
+
+#Flightplan #Contact .form-control{
+  background-color:transparent;
+  border: 3px solid white;
+  border-radius:0;
+  color:white;
+  margin:0 auto;
+}
+
+.radio-inline{
+  color:  white;
+}
+
+/* Starfield CSS Animation */
+.stars, .twinkling {
+  z-index:0;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(/img/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(/img/twinkling.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 300s ease infinite;
+  -ms-animation:move-twink-back 300s ease infinite;
+  -o-animation:move-twink-back 300s ease infinite;
+  -webkit-animation:move-twink-back 300s ease infinite;
+  animation:move-twink-back 300s ease infinite;
+}
+
+/* Animations / Transitions */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+/* just webkit, 'cause yeah... */
+
+@-webkit-keyframes rocketWobble  {
+  0%  { -webkit-transform:  rotate(0deg); }
+  20%  { -webkit-transform:  rotate(2deg); }
+  30%  { -webkit-transform:  rotate(1deg); }
+  50%  { -webkit-transform:  rotate(-1deg); }
+  100%  { -webkit-transform:  rotate(0deg); }
+}
+
+@-moz-keyframes rocketWobble {
+  0%  { -moz-transform:  rotate(0deg); }
+  20%  { -moz-transform:  rotate(2deg); }
+  30%  { -moz-transform:  rotate(1deg); }
+  50%  { -moz-transform:  rotate(-1deg); }
+  100%  { -moz-transform:  rotate(0deg); }
+}
+
+@-o-keyframes rocketWobble {
+  0%  { -o-transform:  rotate(0deg); }
+  20%  { -o-transform:  rotate(2deg); }
+  30%  { -o-transform:  rotate(1deg); }
+  50%  { -o-transform:  rotate(-1deg); }
+  100%  { -o-transform:  rotate(0deg); }
+}
+
+@keyframes rocketWobble {
+  0%  { transform:  rotate(0deg); }
+  20%  { transform:  rotate(2deg); }
+  30%  { transform:  rotate(1deg); }
+  50%  { transform:  rotate(-1deg); }
+  100%  { transform:  rotate(0deg); }
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}

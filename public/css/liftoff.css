@@ -1,26 +1,26 @@
-#Flight-Plan {
+#Liftoff {
   background: #bae8fd;
 }
 
-#Flight-Plan .text * {
+#Liftoff .text * {
   color:#333;
 }
 
-#Flight-Plan .chemtrail {
+#Liftoff .chemtrail {
   background: #FFF;
 }
 
-#Flight-Plan .rocket {
+#Liftoff .rocket {
   right:33vw;
 }
 
-#Flight-Plan .rocket .chemtrail {
+#Liftoff .rocket .chemtrail {
   height:400px;
   -webkit-animation: RocketFlightPlan  1s;
   -moz-animation: RocketFlightPlan  1s;
   animation: RocketFlightPlan  1s;
 }
 
-#Flight-Plan .text {
+#Liftoff .text {
   padding-right:20rem;
 }

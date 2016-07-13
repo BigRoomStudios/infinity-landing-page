@@ -1,0 +1,78 @@
+{% extends "global.html" %}
+
+{% block content %}
+
+<div id="Flightplan" class="hero">
+  <div class="blastoff hidden">
+    <h1>Blastoff!</h1>
+  </div>
+  <div class="container">
+
+    <div class="text">
+
+      <h2>Create Your Flightplan</h2>
+
+      <p>
+        Want to come talk to us about your technology project? We’ll listen to your ideas and talk about how Infinity can help get your business off the ground.
+      </p>
+
+    <form id="Contact" class="form-horizontal">
+
+      <div class="form-group form-group-lg">
+        <div class="col-sm-3">
+          <p>How can we help you?</p>
+        </div>
+        <div class="col-sm-9">
+          <label class="radio-inline"><input type="radio" name="optradio">RSVP for open house.</label>
+          <label class="radio-inline"><input type="radio" name="optradio">Setup an Appointment.</label>
+        </div>
+      </div>
+
+      <div class="form-group form-group-lg">
+        <div class="col-sm-12">
+          <input class="form-control" type="text" id="firstName" placeholder="Name">
+        </div>
+      </div>
+
+      <div class="form-group form-group-lg">
+        <div class="col-sm-12">
+          <input class="form-control" type="text" id="emailAddress" placeholder="Email Address">
+        </div>
+      </div>
+
+      <div class="form-group form-group-lg">
+        <div class="col-sm-12">
+          <input class="form-control" type="text" id="phoneNumber" placeholder="Phone Number">
+        </div>
+      </div>
+
+      <div class="form-group form-group-lg">
+        <div class="col-sm-12">
+        <textarea class="form-control" rows="5" id="message" placeholder="What's your idea or pitch?"></textarea>
+        </div>
+      </div>
+
+    </form>
+
+      <p><a class="btn btn-default btn-lg">Submit request</a></p>
+
+    </div>
+
+  </div>
+
+  <div id="Rocket" class="rocket animated bounceInUp">
+    <img src="/img/rocket_2.png"/>
+  </div>
+
+</div>
+
+<div class="planet-container animated slideInRight">
+  <div id="Planet" >
+    <img src="/img/blue-planet.png"/>
+  </div>
+</div>
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+
+{% endblock %}
