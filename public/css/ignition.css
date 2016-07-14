@@ -9,16 +9,25 @@
   left:33vw;
 }
 
-#Ignition .clouds {
+#Ignition .cloud-container .clouds {
+  height:200px;
   -webkit-animation: CloudLeftIdle 30s linear infinite;
   -moz-animation: CloudLeftIdle 30s linear infinite;
   animation: CloudLeftIdle 30s linear infinite;
 }
 
-#Ignition .clouds-alt {
+#Ignition .cloud-container .clouds-alt {
+  height:200px;
   -webkit-animation: CloudRightIdle 30s linear infinite;
   -moz-animation: CloudRightIdle 30s linear infinite;
   animation: CloudRightIdle 30s linear infinite;
+}
+
+.cloud-container{
+  bottom:0;
+  width:100%;
+  position: absolute;
+  z-index:9;
 }
 
 @media only screen  and (min-width : 768px) {
@@ -27,4 +36,11 @@
     padding-right:15rem;
   }
 
+}
+
+
+#Ignition .cloud-container .clouds-alt.cloud-take-off,
+#Ignition .cloud-container .clouds.cloud-take-off{
+  transition: ease all 5s;
+  height:400px;
 }

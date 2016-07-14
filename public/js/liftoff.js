@@ -1,8 +1,8 @@
 
   function playExitAnimation() {
-    $('.text, .clouds').addClass('animated zoomOut');
-    $('.chemtrail').css({'background-color': 'transparent'})
-    $('.rocket').addClass('animated fadeOutUp');
+    $('.text ').addClass('animated zoomOut');
+    $('.clouds').addClass('animated slideOutDown');
+    $('.chemtrail').addClass('takeOff');
     setTimeout(function() {
       window.location = '/flightplan';
     },700);

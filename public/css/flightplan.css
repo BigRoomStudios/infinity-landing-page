@@ -23,7 +23,7 @@
 }
 
 .rocketWobble {
-  -webkit-animation: rocketWobble 30s infinite;
+  -webkit-animation: rocketWobble 20s infinite;
 }
 
 #Planet img{

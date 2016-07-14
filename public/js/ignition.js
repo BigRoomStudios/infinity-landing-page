@@ -1,11 +1,13 @@
 function playExitAnimation() {
-  $('.rocket img').addClass('animated zoomOutUp');
-  $('.rocket').addClass('rocketUp');
-  $('.clouds').addClass('animated fadeOutDownBig');
-  $('.text').addClass('animated zoomOut');
-  setTimeout(function() {
-    window.location = '/liftoff';
-  }, 700);
+  $('.clouds, .clouds-alt').addClass('cloud-take-off');
+    setTimeout(function() {
+      $('.rocket img').addClass('animated zoomOutUp');
+      $('.rocket').addClass('rocketUp');
+      $('.text').addClass('animated zoomOut');
+      setTimeout(function() {
+        window.location = '/liftoff';
+      }, 700);
+  }, 300);
 }
 
 $(function(){

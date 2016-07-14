@@ -11,6 +11,17 @@
   animation: LogoAnimation 5s ease infinite;
 }
 
+.blue-planet{
+  width: 100%;
+  background: #3b5eab;
+  height: 100%;
+  bottom:-10vh;
+  position: relative;
+  -moz-border-radius: 100% / 80%%;
+	-webkit-border-radius: 100% / 80%;
+	border-radius: 100% / 80%;
+}
+
 @media only screen  and (min-width : 500px) {
   .logo {
     height:200px;

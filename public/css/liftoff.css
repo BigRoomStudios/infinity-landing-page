@@ -15,12 +15,36 @@
 }
 
 #Liftoff .rocket .chemtrail {
-  height:400px;
-  -webkit-animation: RocketFlightPlan  10s;
-  -moz-animation: RocketFlightPlan  10s;
-  animation: RocketFlightPlan  10s;
+  height:200px;
+  -webkit-animation: RocketFlightPlanLg  1s;
+  -moz-animation: RocketFlightPlanLg  1s;
+  animation: RocketFlightPlanLg  1s;
+}
+
+#Liftoff .rocket .chemtrail.takeOff {
+  height:200vh;
+  -webkit-animation: takeOff  1s;
+  -moz-animation: takeOff  1s;
+  animation: takeOff  1s;
 }
 
 #Liftoff .text {
   padding-right:20rem;
+}
+
+/* Take Off for Flight Animation */
+
+@-webkit-keyframes takeOff {
+    0%{  height:200px; }
+    100%{ height:200vh; }
+}
+
+@-moz-keyframes takeOff {
+  0%{  height:200px; }
+  100%{ height:200vh; }
+}
+
+@keyframes takeOff {
+  0%{  height:200px; }
+  100%{ height:200vh; }
 }
