@@ -24,10 +24,10 @@
   right:0;
   width: 100%;
   overflow: hidden;
-  -webkit-animation: spin 10s ease-in-out infinite; /* Chrome, Safari 5 */
-     -moz-animation: spin 10s ease-in-out infinite; /* Firefox 5-15 */
-       -o-animation: spin 10s ease-in-out infinite; /* Opera 12+ */
-          animation: spin 10s ease-in-out infinite; /* Chrome, Firefox 16+,
+  -webkit-animation: spin 10s linear; /* Chrome, Safari 5 */
+     -moz-animation: spin 10s linear; /* Firefox 5-15 */
+       -o-animation: spin 10s linear; /* Opera 12+ */
+          animation: spin 10s linear; /* Chrome, Firefox 16+,
                                                     IE 10+, Safari 5 */
 }
 #Thankyou .planet-container{
@@ -42,6 +42,7 @@
   font-size: 3em;
   color: white;
 }
+
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
     to { -moz-transform: rotate(360deg); }
@@ -53,36 +54,4 @@
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
-}
-
-@-webkit-keyframes rocketWobble  {
-  0%  { -webkit-transform:  rotate(0deg); }
-  20%  { -webkit-transform:  rotate(2deg); }
-  30%  { -webkit-transform:  rotate(1deg); }
-  50%  { -webkit-transform:  rotate(-1deg); }
-  100%  { -webkit-transform:  rotate(0deg); }
-}
-
-@-moz-keyframes rocketWobble {
-  0%  { -moz-transform:  rotate(0deg); }
-  20%  { -moz-transform:  rotate(2deg); }
-  30%  { -moz-transform:  rotate(1deg); }
-  50%  { -moz-transform:  rotate(-1deg); }
-  100%  { -moz-transform:  rotate(0deg); }
-}
-
-@-o-keyframes rocketWobble {
-  0%  { -o-transform:  rotate(0deg); }
-  20%  { -o-transform:  rotate(2deg); }
-  30%  { -o-transform:  rotate(1deg); }
-  50%  { -o-transform:  rotate(-1deg); }
-  100%  { -o-transform:  rotate(0deg); }
-}
-
-@keyframes rocketWobble {
-  0%  { transform:  rotate(0deg); }
-  20%  { transform:  rotate(2deg); }
-  30%  { transform:  rotate(1deg); }
-  50%  { transform:  rotate(-1deg); }
-  100%  { transform:  rotate(0deg); }
 }

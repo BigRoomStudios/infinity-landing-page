@@ -16,9 +16,9 @@
 
 #Liftoff .rocket .chemtrail {
   height:400px;
-  -webkit-animation: RocketFlightPlan  1s;
-  -moz-animation: RocketFlightPlan  1s;
-  animation: RocketFlightPlan  1s;
+  -webkit-animation: RocketFlightPlan  10s;
+  -moz-animation: RocketFlightPlan  10s;
+  animation: RocketFlightPlan  10s;
 }
 
 #Liftoff .text {
