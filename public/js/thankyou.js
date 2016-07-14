@@ -1,13 +1,15 @@
 $(function(){
-  'use-scrict';
   var seconds;
   var temp;
 
  function countdown() {
+   setTimeout(function() {
+     window.location.href = 'http://bigroomstudios.com';
+   }, 10000);
    seconds = document.getElementById('countdown').innerHTML;
    seconds = parseInt(seconds, 10);
    if (seconds == 1) {
-    $('.container').addClass('animated zoomOut');
+     $('.container').addClass('animated zoomOut');
      temp = document.getElementById('countdown');
      temp.innerHTML = "0";
      return;
@@ -20,8 +22,4 @@ $(function(){
 
  countdown();
 
-  setTimeout(function() {
-
-    window.location.href = 'http://bigroomstudios.com';
-  }, 10000);
 });
