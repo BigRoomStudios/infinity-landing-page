@@ -36,11 +36,13 @@
     50%{fill:#fa904d}
     100%{fill:#fa4db2}
 }
+
 @-moz-keyframes LogoAnimation {
   0%{fill:#fa4db2}
   50%{fill:#fa904d}
   100%{fill:#fa4db2}
 }
+
 @keyframes LogoAnimation {
   0%{fill:#fa4db2}
   50%{fill:#fa904d}

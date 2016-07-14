@@ -27,7 +27,6 @@
           animation: spin 20s linear infinite; /* Chrome, Firefox 16+,
                                                     IE 10+, Safari 5 */
 }
-}
 
 @-moz-keyframes spin {
     from { -moz-transform: rotate(0deg); }
