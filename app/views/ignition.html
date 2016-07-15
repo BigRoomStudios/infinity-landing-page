@@ -13,9 +13,10 @@
     <div class="chemtrail"></div>
   </div>
 
+  <div class="cloud-container animated fadeInUp">
     <div class="clouds"></div>
     <div class="clouds clouds-alt"></div>
-
+  </div>
 
   <div class="container">
 
@@ -23,14 +24,12 @@
 
       <h2>Ignition</h2>
 
-      <p>We kick-off the process with a 3 hour planning and strategy session, where we get all your ideas,
-        features  and user stories out on the table, while discussing your overall business
-        and development goals. We then write the <span>Ignition Document</span>, organizing and outlining this
-        content for your review.
+      <p>
+        Big Room Studios created the Infinity process to help our clients document ideas and create an actionable plan for new technology projects over the course of three weeks.
       </p>
 
       <p>
-        <a class="btn btn-default">Build a Flight Plan</a>
+        <a class="btn btn-default">Launch</a>
       </p>
 
     </div>
@@ -38,22 +37,5 @@
   </div>
 
 </div>
-
-<script type="text/javascript">
-
-  function playExitAnimation() {
-    $('.rocket img').addClass('animated zoomOutUp');
-    $('.rocket').addClass('rocketUp');
-    $('.clouds').addClass('animated fadeOutDownBig');
-    $('.text').addClass('animated zoomOut');
-    setTimeout(function() {
-      window.location = '/flight-plan';
-    },700);
-  }
-
-  $(function(){
-    $('.btn').click(playExitAnimation);
-  })
-</script>
 
 {% endblock %}

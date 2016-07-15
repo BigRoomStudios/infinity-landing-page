@@ -1,56 +1,10 @@
 /* Styles */
+html{
+  overflow:hidden;
+}
 
 .container {
   padding:0;
-}
-
-/* Logo */
-.logo{
-  display:block;
-  margin:6rem auto 0 auto;
-  fill:#FFF;
-  height:150px;
-  width:100%;
-  fill: #fa4db2;
-  -webkit-animation: LogoAnimation 5s ease infinite;
-  -moz-animation: LogoAnimation 5s ease infinite;
-  animation: LogoAnimation 5s ease infinite;
-}
-
-@media only screen  and (min-width : 500px) {
-  .logo {
-    height:200px;
-  }
-}
-
-@media only screen  and (min-width : 768px) {
-  .logo {
-    margin-top:25vh;
-  }
-}
-
-@media only screen  and (min-width : 1441px) {
-  .logo {
-    margin-top:20vh;
-    height:400px;
-  }
-}
-
-/* Logo Animation */
-@-webkit-keyframes LogoAnimation {
-    0%{fill:#fa4db2}
-    50%{fill:#fa904d}
-    100%{fill:#fa4db2}
-}
-@-moz-keyframes LogoAnimation {
-  0%{fill:#fa4db2}
-  50%{fill:#fa904d}
-  100%{fill:#fa4db2}
-}
-@keyframes LogoAnimation {
-  0%{fill:#fa4db2}
-  50%{fill:#fa904d}
-  100%{fill:#fa4db2}
 }
 
 /* Hero */
@@ -105,6 +59,14 @@
   height:400px;
   display:block;
   margin:auto;
+}
+
+.rocket-sm {
+  bottom:20px;
+}
+
+.rocket-sm img {
+  height:100px;
 }
 
 .rocket .chemtrail {
@@ -162,11 +124,4 @@
 
 .shoot {
   transform: rotateX( 45deg );
-}
-
-
-
-
-#Launch {
-  background:#FFF url('http://bigroomstudios.com/assets/images/services/header-bg-infinity-layer-3-b2a1231b.png') no-repeat 150px -50px;
 }

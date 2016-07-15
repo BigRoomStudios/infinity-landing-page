@@ -60,3 +60,17 @@
   0%{  height:5px; }
   100%{ height:400px; }
 }
+
+* Rocket Up for Flight Plan Animation */
+@-webkit-keyframes RocketFlightPlanLg {
+    0%{  height:5px; }
+    100%{ height:200px; }
+}
+@-moz-keyframes RocketFlightPlanLg {
+  0%{  height:5px; }
+  100%{ height:200px; }
+}
+@keyframes RocketFlightPlanLg {
+  0%{  height:5px; }
+  100%{ height:200px; }
+}
