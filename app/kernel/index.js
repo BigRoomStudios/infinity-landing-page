@@ -11,7 +11,7 @@ const publicPath = `${rootPath}/public`;
 
 server.connection({
     host: 'localhost',
-    port: 8000,
+    port: 3010,
     routes: {
         files: {
             relativeTo: publicPath
